@@ -251,8 +251,8 @@ width: 40px;
 left: -60%;
 top: -10%;
 position: relative;
-transform: rotate(90deg);
--ms-transform: rotate(90deg);
+transform: rotate(270deg);
+-ms-transform: rotate(270deg);
 -webkit-transform: rotate(270deg);
 }
 
