@@ -310,7 +310,7 @@ transform: rotate(270deg);
 }
 
 #card {
-	background: url(../resources/code/card.png) no-repeat center top;
+	background: url(../resources/code/card.PNG) no-repeat center top;
 	background-size: cover;
 }
 
