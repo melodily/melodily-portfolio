@@ -292,7 +292,7 @@ transform: rotate(270deg);
 }
 
 #gg {
-	background: url(../resources/code/gg.png) no-repeat;
+	background: url(../resources/code/gg.PNG) no-repeat;
 }
 
 #voxelab {
@@ -301,12 +301,12 @@ transform: rotate(270deg);
 }
 
 #itemgenie {
-	background: url(../resources/code/itemgenie.png) no-repeat;
+	background: url(../resources/code/itemgenie.PNG) no-repeat;
 	background-size: cover;
 }
 
 #pinata {
-	background: url(../resources/code/pinata.png) no-repeat center top;
+	background: url(../resources/code/pinata.PNG) no-repeat center top;
 	background-size: cover;
 }
 
@@ -321,7 +321,7 @@ transform: rotate(270deg);
 }
 
 #agm{
-background: url(../resources/design/agm.png) no-repeat;
+background: url(../resources/design/AGM.png) no-repeat;
 	background-size: cover;
 }
 
@@ -331,7 +331,7 @@ background: url(../resources/design/orientation.jpg) no-repeat center bottom;
 }
 
 #welcometea2012{
-	background: url(../resources/design/welcometea2012.png) no-repeat center center;
+	background: url(../resources/design/welcometea2012.PNG) no-repeat center center;
 	background-size: cover;
 }
 
@@ -340,22 +340,22 @@ background: url(../resources/design/orientation.jpg) no-repeat center bottom;
 	background-size: cover;
 }
 #curious{
-	background: url(../resources/media/curious.png) no-repeat center top;
+	background: url(../resources/media/curious.PNG) no-repeat center top;
 	background-size: cover;
 }
 
 #mnm{
-	background: url(../resources/media/mnm.png) no-repeat center top;
+	background: url(../resources/media/mnm.PNG) no-repeat center top;
 	background-size: cover;
 }
 
 #job{
-	background: url(../resources/media/job.png) no-repeat center top;
+	background: url(../resources/media/job.PNG) no-repeat center top;
 	background-size: cover;
 }
 
 #makingofmelody{
-	background: url(../resources/media/makingofmelody.png) no-repeat center center;
+	background: url(../resources/media/makingofmelody.PNG) no-repeat center center;
 	background-size: cover;
 }
 
@@ -390,7 +390,7 @@ background: url(../resources/design/orientation.jpg) no-repeat center bottom;
 }
 
 #sleepingheart{
-	background: url(../resources/writing/sleepingheart.jpg) no-repeat center center;
+	background: url(../resources/writing/sleepingheart.JPG) no-repeat center center;
 	background-size: cover;
 }
 
