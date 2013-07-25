@@ -419,15 +419,25 @@ body {
 
 @font-face {
 	font-family: "sybil green";
-	src: url('../fonts/sybilgreen.otf' format("opentype");
+	src: url('../fonts/sybilgreen.eot' format("embedded-opentype");
+	src: url('../fonts/sybilgreen.woff' format("woff"),
+		 url('../fonts/sybilgreen.otf' format("opentype"),
+		 url('../fonts/sybilgreen.ttf' format("truetype");
 }
 
 @font-face {
 	font-family: "code pro demo";
-	src: url('../fonts/Code_Pro_Demo.otf') format("opentype");
+	src: url('../fonts/Code_Pro_Demo.eot') format("embedded-opentype");
+	src: url('../fonts/Code_Pro_Demo.otf') format("opentype"),
+	url('../fonts/Code_Pro_Demo.ttf') format("truetype"),
+	url('../fonts/Code_Pro_Demo.woff') format("woff");
 }
 
 @font-face {
 	font-family: "Segoe UI";
-	src: url('../fonts/segoeui.ttf') format("opentype");
+	src: url('../fonts/segoeui.eot') format("embedded-opentype");
+	src: url('../fonts/segoeui.ttf') format("truetype"),
+		 url('../fonts/segoeui.otf') format("opentype"),
+		 url('../fonts/segoeui.woff') format("woff");
+	
 }
