@@ -263,7 +263,6 @@ transform: rotate(270deg);
 	width: 100%;
 	height: 90%;
 	overflow: auto;
-	margin-top: -5%;
 	columns: 2;
 	-webkit-columns: 2;
 	-moz-columns: 2;
