@@ -1,5 +1,11 @@
 var hasOverlay = false;
 
+$("img").attr("onload", "loadImage()");
+
+function loadImage(){
+$(".small-images").fadeIn();
+}
+
 $(".category").click(function() {
     var id = $(this).attr("id");
     id = "#" + id + "-thumbnails";

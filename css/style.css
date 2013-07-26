@@ -219,6 +219,7 @@ width: 40px;
 .small-images{
 transition: 0.5s;
 -webkit-transition: 0.5s;
+display: none;
 	width: 200px;
 	height: 200px;
 		box-shadow: 0 0 10px #222;
