@@ -6,6 +6,7 @@ $(".category").click(function() {
     $(".description-bg:not(" + id +')').slideUp('fast');
     $(id).slideToggle('fast', function() {
         $("#title").resize();
+		//showImageAndRecurse(id+":first");
     });
 })
 
@@ -14,6 +15,14 @@ $(".small-images").hover(function() {
 }, function() {
     $(".imageHover", this).hide();
 })
+
+/*function showImageAndRecurse(image){
+var classes = $(image).attr('class');
+classes = "." + classes.replace(/\s/g,".");
+    var next = $(image).next(classes).attr('id');
+	image.fadeIn(400, showImageAndRecurse(next));
+
+}*/
 
 $(".small-images").click(function(event) {
     $(".description-expand").hide();
