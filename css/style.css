@@ -289,6 +289,11 @@ transform: rotate(270deg);
 	overflow-y: auto;
 }
 
+#asteroids{
+	background: url(../resources/code/asteroids.PNG) no-repeat center center;
+	background-size: cover;
+}
+
 #geekdo {
 	background: url(../resources/code/geekdo.PNG) no-repeat;
 }
