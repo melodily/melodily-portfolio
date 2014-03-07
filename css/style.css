@@ -290,7 +290,7 @@ transform: rotate(270deg);
 }
 
 #asteroids{
-	background: url(../resources/code/asteroids.PNG) no-repeat center center;
+	background: url(../resources/code/asteroids.png) no-repeat center center;
 	background-size: cover;
 }
 
