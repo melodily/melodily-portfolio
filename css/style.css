@@ -294,6 +294,30 @@ transform: rotate(270deg);
 	background-size: cover;
 }
 
+#jiku {
+    background: url(../resources/code/jiku.PNG) no-repeat center;
+    background-size: cover;
+}
+
+#guardian{
+    background: url(../resources/code/guardian.PNG) no-repeat center;
+    background-size: cover;
+}
+
+#climb{
+    background: url(../resources/code/climb.PNG) no-repeat center;
+    background-size: cover;
+}
+
+#blow {
+    background: url(../resources/code/blow.PNG) no-repeat center;
+    background-size: cover;
+}
+
+#skyward{
+    background: url(../resources/code/skyward.PNG) no-repeat center;
+    background-size: cover;
+}
 #geekdo {
 	background: url(../resources/code/geekdo.PNG) no-repeat;
 }
