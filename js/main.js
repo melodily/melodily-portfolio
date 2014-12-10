@@ -36,9 +36,9 @@ $(".small-images").click(function(event) {
     current = ".description-expand#" + current + "_description";
     setParametersOfExpand(current);
     var heightOfContainer = $(current).height()*0.9;
-    console.log("container: " + heightOfContainer);
     $(".images-container").css("line-height", heightOfContainer + "px");
-    // $(".images-container").append('<i class="icon-forward icon-white icon-position"></i>');
+    // $(".images-container").append('<i class="icon-forward icon-white icon-position"></i>');
+
     $(current).show();
         hasOverlay = true;
         event.stopPropagation();
@@ -51,15 +51,19 @@ function setParametersOfExpand(idOfDescription) {
     console.log(current + $(current).css("position"));
     var height = $(window).height();
     var width = $(window).width();
-    var top = $(document).scrollTop() + 0.1 * height;
+    var top = $(document).scrollTop();
     console.log(width + ", " + $(current).width() + ", "+ width*0.66);
     height *= 0.8;
     width*=0.66;
     console.log(top);
     $(current).css("top", top + "px");
-    $(current).css("height", height + "px");
-     $(current).css("width", width + "px");
-    $("body").css("overflow", "hidden");
+     $(current).css("width", width + "px");
+          $("body").css ("overflow", "hidden");
+     $(current).css("overflow-y", "scroll");
+     var iconTop = top + 0.45*height;
+     $(".icon-next-position").css("top", iconTop + "px");
+     $(".icon-prev-position").css("top", iconTop + "px");
+
 }
 
 
