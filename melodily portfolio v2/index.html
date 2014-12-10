@@ -380,7 +380,7 @@
                         <div class="modal-body">
                             <h2>Zoo Panic</h2>
                             <hr class="star-primary">
-                                <div id="zoo-panic-generic" class="carousel slide" data-ride="carousel">
+                            <div id="zoo-panic-generic" class="carousel slide" data-ride="carousel">
 
                                  <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -424,18 +424,23 @@
                             <li>Project Length: <strong>3 weeks</strong></li>
                             <li>Team: <strong>Melody Lee, Stephanie Fawaz, Arim Yoon, Shih-Tsui Kuo, Han Liu</strong></li>
                         </ul>
-                            <p></p>
+                            <p>Zoo Panic is a top-down projected game, created for a Building Virtual Worlds class, that makes use of PS Move controller coordinate position for input. As we were aiming for an experience where players are able to catch animals when the net is directly over the specific animal, we had to do bilinear interpolation to make sure that the PS Move coordinates map to real world projected space. 
+                                <br /><br />
+                                Animals had three behavior modes - Normal, Fleeing, and Caught. Normal mode is further broken down into two states, Move and Stop. Animals in Move state have a randomized direction as well as a randomized distance to travel along that direction. The desired destination is thus stored based on the direction and distance, along with the normalized direction that the animal is going in. Based on these variables, we were able to check if the animal has reached its destination by checking if the normalized direction from the animal to the destination is different from the stored direction. Upon reaching their destination, animals would transit to a Stop state and not move for a randomized amount of time, following which it will transit back to Move state. In order for animals not to get stuck upon collision, a new randomized direction and distance will be set upon collision with any object. <br/><br/>
+                                Fleeing mode is activated when the player is within a certain distance of the animal. The animal will then move in the direction away from the player.<br /> <br />
+                                Caught mode is activated when the player catches the correct animal. Animals will begin their struggling animation and stay at the same spot. The AnimalManager class is responsible for randomizing which animal to call next, and checking if the animal that the player swings her net over is the correct animal. <br /> <br />
+                                Zoo Panic went through many iterations. We began with the idea of catching animals in a fixed order, with the objective of trying to catch all the animals in the fastest amount of time and no time limit. The lack of choice and motivation made us develop another idea of having carnivores and herbivores, with the aim of catching the animals before too many herbivores were eaten. This devolved into mindless spamming. We went back to the first idea with a twist of having to lead the animals back to their pens instead, but this slowed down the pace so much that it became boring. We then decided to try a random order each time, which worked better, and finally settled on a time limit to catch each animal that got shorter and shorter as the game progresses. All of these ideas were prototyped. In order to support this rapid iteration, we made use of class inheritance, so that we could compare multiple ideas side by side by simply changing the class component to a parent or child class. <br /><br />
+                                I was in charge of programming animal behavior as well as the AnimalManager.<br /><br />
+                                Zoo Panic was eventually selected to be exhibited in the Building Virtual Worlds Festival. 20 games were exhibited, out of a total of 78 worlds made in the entirety of the course.
+
+                        </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <li>Video:
+                                    <strong><a href="https://www.youtube.com/watch?v=rULvsAaaazM">Gameplay</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong>Nov 2014
                                     </strong>
                                 </li>
                             </ul>
@@ -459,21 +464,86 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>The Old Men and the Sea</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <div id="oldmen-generic" class="carousel slide" data-ride="carousel">
+
+                                 <!-- Indicators -->
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#oldmen-generic" data-slide-to="0" class="active"></li>
+                                        <li data-target="#oldmen-generic" data-slide-to="1"></li>
+                                        <li data-target="#oldmen-generic" data-slide-to="2"></li>
+                                        <li data-target="#oldmen-generic" data-slide-to="3"></li>
+                                        <li data-target="#oldmen-generic" data-slide-to="4"></li>
+                                      </ol>
+
+                                      <!-- Wrapper for slides -->
+                                      <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/nVYRmANpqEs"></iframe>
+                                                </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/2fMjwQ_Vjec"></iframe>
+                                                </div>
+                                        </div>
+                                         <div class="item">   
+                                          <img src="img/portfolio/oldmen.png">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/portfolio/oldmen_story2.png">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/portfolio/oldmen_story.png">
+                                        </div>
+                                      </div>
+
+                                      <!-- Controls -->
+                                      <a class="left carousel-control" href="#oldmen-generic" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                      </a>
+                                      <a class="right carousel-control" href="#oldmen-generic" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                      </a>
+                                    </div>
+                            <!-- <img src="img/portfolio/zoo.png" class="img-responsive img-centered" alt=""> -->
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                            <li>Technology: <strong>PS Move</strong></li><br />
+
+                            <li>Platform: <strong>PC</strong></li>
+                            <li>Engine: <strong>Unity 3D</strong></li>
+                            <li>Language: <strong>C#</strong></li>
+                            <li>Project Length: <strong>3 weeks</strong></li>
+                            <li>Team: <strong>Melody Lee, Zhetao Wang, Wenyu Jiang, Jack Tsai, Minoong Ji</strong></li>
+                        </ul>
+                            <p>The Old Men and the Sea is a co-op game for 2 players, each of them wielding a PS Move, made for a Building Virtual Worlds course. There were 4 main things to take care of in terms of programming: the fish, the light, the boat, as well as the spear. Because the y-coordinate corresponded to depth as well in the game, we had to also make sure that objects scaled linearly based on its in-game depth, with further objects being smaller and nearer objects bigger. <br /> <br />
+                                In order to enable dynamic 2D lighting for the fish, we checked if the light was in the same "depth" as the fish, before checking for every pixel of the opaque layer over the fish whether the light collider was over it. We had to map the texture coordinate of the opaque layer to its in-world coordinate in order to perform the second check. In order to make this less computationally intensive, we used a lower-resolution opaque texture, and scaled the texture up. 
+                                <br /><br />We made a static class, WaveSpriteOrder, that provides a reference for which wave(s) the objects in the game are behind. All dynamic objects in the game, namely, the fish, the light, the boat, and the spear, refer to this class and set their sprite orders accordingly. These objects also store their own sprite order in relation to the waves, so that we can establish if they are in between the same waves. Only when the boat and fish are in between the same waves, give or take a tolerance we set, will the spear be able to hit the fish. 
+                                <br /><br />The light direction depends on the angle of the PS Move. Moving the PS Move up directs the light further away and vice versa. Where the light hits the wave, determined through ray-casting, is where the boat will travel towards, unless the light is hitting the fish - the boat will travel towards the fish instead.<br /><br />
+                                The boat's x-axis movement is entirely programmed, while its y-axis movement is animated. This was done because we wanted greater control over how much the boat rocks depending on what stage the storm is in. The boat either moves forward or backward; each time it changes direction, it sets a random segment distance around a range that changes depending on whether it is moving forward or backward. When it has travelled that distance, it will change direction. "Depth"-wise, it will simply move towards the light. 
+                                <br /><br />
+                                The fish's x-axis movement is also programmed. The fish changes velocity around a random range at the end of each animated leap, with a chance of changing direction in both the x-axis as well as the z-axis. This is tied to the fish's animation so that the fish will only flip when it is under the waves. As the stages progress, the fish has a higher chance of doing its high leap, making the game more exciting.
+                                <br /><br /> 
+                                The spear's angle is determined by the angle of the PS Move. New spears are only instantiated when the thrown spear is out of the screen. 
+                                <br /><br />
+                                I programmed the fish, the boat, the wave sprite order, event triggers, and the light. The dynamic 2D lighting for the fish was a collaborative effort. <br /> <br />
+                                The Old Men and the Sea was eventually selected to be exhibited in the Building Virtual Worlds Festival. 20 games were exhibited, out of a total of 78 worlds made in the entirety of the course.</p>
+                            <ul class="list-inline item-details">
+                                <li>Video:
+                                    <strong><a href="https://www.youtube.com/watch?v=nVYRmANpqEs">Gameplay</a>
                                     </strong>
                                 </li>
+                                 <li>Video:
+                                    <strong><a href="https://www.youtube.com/watch?v=2fMjwQ_Vjec&feature=youtu.be">Watch people playing</a>
+                                    </strong>
+                                </li>
+
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong>Oct 2014
                                     </strong>
                                 </li>
                             </ul>
@@ -496,21 +566,75 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Guardian of the Forest</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <div id="guardian-generic" class="carousel slide" data-ride="carousel">
+
+                                 <!-- Indicators -->
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#guardian-generic" data-slide-to="0" class="active"></li>
+                                        <li data-target="#guardian-generic" data-slide-to="1"></li>
+                                        <li data-target="#guardian-generic" data-slide-to="2"></li>
+                                        <li data-target="#guardian-generic" data-slide-to="3"></li>
+                                      </ol>
+
+                                      <!-- Wrapper for slides -->
+                                      <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/oMDiI1kC_gM"></iframe>
+                                                </div>
+                                        </div>
+                                         <div class="item">   
+                                          <img src="img/portfolio/guardian_start.png">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/portfolio/guardian_story.png">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/portfolio/guardian.png">
+                                        </div>
+                                      </div>
+
+                                      <!-- Controls -->
+                                      <a class="left carousel-control" href="#guardian-generic" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                      </a>
+                                      <a class="right carousel-control" href="#guardian-generic" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                      </a>
+                                    </div>
+                            <!-- <img src="img/portfolio/zoo.png" class="img-responsive img-centered" alt=""> -->
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                            <li>Technology: <strong>Kinect 1</strong></li><br />
+
+                            <li>Platform: <strong>PC</strong></li>
+                            <li>Engine: <strong>Unity 3D</strong></li>
+                            <li>Language: <strong>C#</strong></li>
+                            <li>Project Length: <strong>2 weeks</strong></li>
+                            <li>Team: <strong>Melody Lee, Stephanie Fawaz, Qing Mao, Arim Yoon, Jake Ahn</strong></li>
+                        </ul>
+                            <p>Guardian of the Forest is a Kinect game made for a Building Virtual Worlds course. We made use of 2D sprites for the tree parts, because we wanted the flexibility to update the level design by swapping sprites, instead of redoing a 3D model. To do that, we set each part to rotate based on the angle between the two joints it links and the x-axis.<br /> <br />
+                                
+                                For each end of a tree part that can connect to another tree part, there is a trigger that will set a boolean when it is in contact with another such trigger. When that boolean is true, the droplet will teleport from its current tree part to the connected tree part, creating the illusion of an unbroken path. In addition, each tree part can also by default be connected to another tree part - for example, if there are hollow branches in both the upper and lower arm, these parts are automatically connected, so if the branch is not currently in contact with another trigger, water droplets will flow to the default connected part. If the branch has neither, droplets will flow out of the branch instead. <br /> <br />
+
+                                The level transition for this game is unique in its side-scrolling manner, as we wanted to reinforce the idea that there are fires at various parts of the forest. To make that happen, tree parts for the respective levels were set active or inactive, and the current level is stored as a variable inside LevelManager.<br /><br />
+
+                                Kinect 1's movement proved to be jerky, so instead of taking the position values of each joint every frame, we averaged several frames to try to smooth the values out. We also adjusted smoothing, correction, prediction, and jitter radius values for the Kinect, while taking care not to introduce too much lag. <br /><br />
+
+                                I was in charge of programming the connection triggers and the level manager. I also did my best to smooth the kinect movement. <br /><br />
+
+                                Guardian of the Forest was eventually selected to be exhibited in the Building Virtual Worlds Festival. 20 games were exhibited, out of a total of 78 worlds made in the entirety of the course.</p>
+                            <ul class="list-inline item-details">
+                                <li>Video:
+                                    <strong><a href="https://www.youtube.com/watch?v=oMDiI1kC_gM">Gameplay</a>
                                     </strong>
                                 </li>
+
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong>Sept 2014
                                     </strong>
                                 </li>
                             </ul>
@@ -535,8 +659,52 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+<div id="owl-generic" class="carousel slide" data-ride="carousel">
+
+                                 <!-- Indicators -->
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#owl-generic" data-slide-to="0" class="active"></li>
+                                        <li data-target="#owl-generic" data-slide-to="1"></li>
+                                        <li data-target="#owl-generic" data-slide-to="2"></li>
+                                      </ol>
+
+                                      <!-- Wrapper for slides -->
+                                      <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/4gdwgsIQOZ8"></iframe>
+                                                </div>
+                                        </div>
+                                         <div class="item">   
+                                          <img src="img/portfolio/owl_start.png">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/portfolio/owl.png">
+                                        </div>
+                                      </div>
+
+                                      <!-- Controls -->
+                                      <a class="left carousel-control" href="#owl-generic" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                      </a>
+                                      <a class="right carousel-control" href="#owl-generic" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                      </a>
+                                    </div>
+                            <!-- <img src="img/portfolio/zoo.png" class="img-responsive img-centered" alt=""> -->
+                            <ul class="list-inline item-details">
+                            <li>Technology: <strong>Oculus, PS Move</strong></li><br />
+
+                            <li>Platform: <strong>PC</strong></li>
+                            <li>Engine: <strong>Unity 3D</strong></li>
+                            <li>Language: <strong>C#</strong></li>
+                            <li>Project Length: <strong>2 weeks</strong></li>
+                            <li>Team: <strong>Melody Lee, Rishit Bhatia, Julian Toker, Hye Jeong Jeon, Adam Liss</strong></li>
+                        </ul>
+                        
+                            <p>Climb to the Owl was eventually selected to be exhibited in the Building Virtual Worlds Festival. 20 games were exhibited, out of a total of 78 worlds made in the entirety of the course.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
