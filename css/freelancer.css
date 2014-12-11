@@ -11,6 +11,12 @@ body {
 p {
     font-size: 20px;
 }
+.pic{
+    border-radius: 100px;
+}
+img {
+    border-radius: 10px;
+}
 
 p.small {
     font-size: 16px;
@@ -255,8 +261,7 @@ section.success {
     margin-top: 15px;
     border: solid 2px #fff;
     font-size: 20px;
-    color: #fff;
-    background: 0 0;
+    background: #222222;
     transition: all .3s ease-in-out;
 }
 
@@ -363,7 +368,15 @@ footer .footer-below {
 .btn.active {
     outline: 0;
 }
-
+.form-control::-moz-placeholder {
+  color: #eee;
+}
+.form-control:-ms-input-placeholder {
+  color: #eee;
+}
+.form-control::-webkit-input-placeholder {
+  color: #eee;
+}
 .scroll-top {
     z-index: 1049;
     position: fixed;
@@ -385,6 +398,12 @@ footer .footer-below {
     outline: 0;
 }
 
+.field {
+    color: #fff !important;
+}
+.modal .modal-content{
+    overflow-y: scroll !important;
+}
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
