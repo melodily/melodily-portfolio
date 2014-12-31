@@ -306,7 +306,7 @@ if (typeof jQuery === 'undefined') {
     this.$element    = $(element)
     this.$indicators = this.$element.find('.carousel-indicators')
     this.options     = options
-    this.paused      =
+    this.paused      = true
     this.sliding     =
     this.interval    =
     this.$active     =
@@ -325,7 +325,7 @@ if (typeof jQuery === 'undefined') {
 
   Carousel.DEFAULTS = {
     interval: 5000,
-    pause: 'hover',
+    pause: 'true',
     wrap: true,
     keyboard: true
   }
