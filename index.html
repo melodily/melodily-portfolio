@@ -105,10 +105,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>I am a programmer who enjoys learning about and developing algorithms. I have programmed in Java, Python, Scheme, C#, C++, and JavaScript, and am comfortable with learning new languages and frameworks. My code for games is crafted with game design in mind, as I pre-empt possible needs and directions of the game and allow for easy tweaking of variables. </p>
+                    <p>I am a programmer who enjoys learning about and developing algorithms. I have programmed in Java, Python, Scheme (a Lisp dialect), C#, C++, and JavaScript, and am comfortable with learning new languages and frameworks. My code for games is crafted with game design in mind, as I pre-empt possible needs and directions of the game and allow for easy tweaking of variables. </p>
                 </div>
                 <div class="col-lg-4">
-                    <p>I graduated with a Bachelor in Computing (First Class Honors) from the National University of Singapore, with a Minor in English. Currently, I am doing what I love - programming games at the Entertainment Technology Center at Carnegie Mellon University for a Master in Entertainment Technology. </p>
+                    <p>I graduated with a Master in Entertainment Technology from Carnegie Mellon University, as well as a Bachelor in Computing (First Class Honors) from the National University of Singapore, with a Minor in English. Currently, I am a Software Engineer at Garena, and am pumped that I get to learn new technologies every day. </p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="Resume (Melody Lee).pdf" class="btn btn-lg btn-outline">
@@ -132,7 +132,20 @@
                     <h3>Games</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class = "row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#flappyPong" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                        <h3>Flappy Pong</h3>
+                            <div class = "portfolio-caption">
+                          <h6>C#, Unity 3D, PC + Web</h6>
+                          Estimate the right amount of force to bounce the ball past hurdles into the next sweet spot.</div>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/flappy_pong.png" class="img-responsive" alt="">
+                    </a>
+                </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#zooPanic" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -162,8 +175,9 @@
                         </div>
                         <img src="img/portfolio/oldmen.png" class="img-responsive" alt="">
                     </a>
-                    <!-- <div class = "portfolio-caption">In this top-down projection game, players play a zookeeper who has accidentally let the animals escape.</div> -->
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a href="#guardian" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -207,6 +221,8 @@
                         <img src="img/portfolio/skyward.png" class="img-responsive" alt="">
                     </a>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a href="#blow" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -397,8 +413,8 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-<!--                         <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
                     </div>
                 </div>
             </div>
@@ -419,6 +435,78 @@
         <a class="btn btn-primary" href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="flappyPong" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Flappy Pong</h2>
+                            <hr class="star-primary">
+                            <div id="flappy-generic" class="carousel slide" data-ride="carousel">
+
+                                 <!-- Indicators -->
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#flappy-generic" data-slide-to="0" class="active"></li>
+                                        <li data-target="#flappy-generic" data-slide-to="1"></li>
+                                      </ol>
+
+                                      <!-- Wrapper for slides -->
+                                      <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                          <img src="img/portfolio/flappy_pong.png">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/portfolio/flappy_pong_ingame.png">
+                                        </div>
+                                      </div>
+
+                                      <!-- Controls -->
+                                      <a class="left carousel-control" href="#flappy-generic" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                      </a>
+                                      <a class="right carousel-control" href="#flappy-generic" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                      </a>
+                                    </div>
+                            <!-- <img src="img/portfolio/zoo.png" class="img-responsive img-centered" alt=""> -->
+                            <ul class="list-inline item-details">
+                            <li>Platform: <strong>PC/Web</strong></li>
+                            <li>Engine: <strong>Unity 3D</strong></li>
+                            <li>Language: <strong>C#</strong></li>
+                            <li>Project Length: <strong>2 weeks</strong></li>
+                            <li>Solo Project</li>
+                        </ul>
+                            <p>Flappy Pong is a game developed during a Game Design class. In the span of two weeks, it went through 13 iterations and playtests in order to arrive at this final product. It makes use of the simple addictive mechanic of quick estimation in order to charge the ball to the correct height and distance. The height of hurdles, as well as the distance between the top and bottom hurdles, are randomly generated within a range that increases in difficulty as the player's score increases. Power ups are also strategically positioned along the arc that the player should ideally achieve, in order for the ball to travel further. </p>
+                            <ul class="list-inline item-details">
+                                <li>Play it here:
+                                    <strong><a href="FlappyPongV14/FlappyPongV14.html">Link</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong>Iteration Process: <a href="materials/LeeZhiXinMelody_FrontierOfFreedom.pdf">Download PDF</a> </strong>
+
+                                <li>Date:
+                                    <strong>April 2015
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Portfolio Modals -->
